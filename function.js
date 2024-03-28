@@ -10,7 +10,7 @@ function solve(x) {
 console.log(solve(5)(3, 2));
 
 
-const calc = function (x) {
+const calc = (x) => {
     function secondNumber(a, e){
         return a * x * e;
     }
