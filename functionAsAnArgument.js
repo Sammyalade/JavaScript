@@ -3,9 +3,9 @@ function highOrderFunction(func){
     func()
 }
 
-// function lowOrderFunction(){
-//     console.log("lower order function");
-// }
+function lowOrderFunction(){
+    console.log("lower order function");
+}
 
 highOrderFunction(()=>{
     console.log("lower order function");
