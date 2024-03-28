@@ -3,8 +3,18 @@ function highOrderFunction(func){
     func()
 }
 
-function lowOrderFunction(){
+// function lowOrderFunction(){
+//     console.log("lower order function");
+// }
+
+highOrderFunction(()=>{
     console.log("lower order function");
+})
+
+function greetingFunction(greet){
+    return function person(name){
+        return `Hello, ${greet} ${name}`;
+    }
 }
 
-highOrderFunction(lowOrderFunction);
+console.log(greetingFunction("Good morning")("Victor"));
