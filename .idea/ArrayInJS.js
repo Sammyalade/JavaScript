@@ -17,3 +17,17 @@ console.log(array);
 let num = [4, 5, 6]
 
 console.log(array.concat(num));
+
+let newArray = [
+    ["car", 2000],
+    ["Truck", 500],
+    ["Bike", 6500]
+]
+
+console.log(newArray);
+
+console.log(newArray[0][0]);
+
+let addArray = ["Scooter", 1500]
+
+console.log(newArray.concat([addArray]));
