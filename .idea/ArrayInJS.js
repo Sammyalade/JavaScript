@@ -29,5 +29,37 @@ console.log(newArray);
 console.log(newArray[0][0]);
 
 let addArray = ["Scooter", 1500]
+newArray = newArray.concat([addArray])
+console.log();
 
-console.log(newArray.concat([addArray]));
+let arrayRow = [["Toyota", "Nissan"], ["Ford"], ["Honda"]]
+newArray[0].push(arrayRow[0]);
+newArray[1].push(arrayRow[1]);
+newArray[2].push(arrayRow[2]);
+newArray.pop()
+console.log(newArray);
+
+
+let boxArray = [[200, 50, 300, 5], [10, 25, 7, 100], [25, 20, 70, 45], [500, 170, 11, 35]];
+
+let display = boxArray[1];
+display.pop()
+console.log(display);
+
+let user = {
+    lastName : "Miriam",
+    age: "106",
+    sex: "female"
+}
+
+for(const key in user){
+    console.log(user[key]);
+}
+
+for(const value of array){
+    console.log(value)
+}
+
+for(const index in array){
+    console.log(array[index]);
+}
