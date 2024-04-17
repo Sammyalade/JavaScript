@@ -66,7 +66,7 @@ let raw_array = [[null, lagos, uyo, ibadan], [kaduna, oyo, abuja, null], [delta,
 let total_population = 0;
 for(const value of raw_array){
     for(const index in value){
-        if(value[index] != null){
+        if(value[index] != null && value[index].temp > 7){
             total_population += value[index].population;
         }
     }
