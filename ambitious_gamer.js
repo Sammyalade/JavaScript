@@ -1,5 +1,5 @@
-function generate(obj, num1, num2) {
-    return obj.map(item => item.row)
+function generate(obj) {
+    return obj.map(item => item.value)
 }
 
 let obj = [

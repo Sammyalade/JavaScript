@@ -74,3 +74,8 @@ for(const value of raw_array){
 
 
 console.log(total_population);
+
+let array = [1, 3, 5, 6, 7, 8, 9]
+//array.forEach(element => {console.log(element * 2)})
+
+array.map(element => console.log(element * 2))
