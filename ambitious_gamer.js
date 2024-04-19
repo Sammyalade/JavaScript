@@ -14,3 +14,16 @@ let obj = [
     {row: 2, col: 2, value: "O"}
 ]
 console.log(generate(obj))
+
+function generate2(obj, length, width) {
+    let board = Array.from({length}, () => Array(width));
+
+    obj.forEach(item => {
+        board[item.row][item.col] = item.value;
+    });
+
+    return board;
+}
+
+console.log(generate2(obj, 3, 3))
+module.exports = generate;
