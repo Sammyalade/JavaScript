@@ -36,7 +36,7 @@ function mainMenu() {
                 chatMenu();
                 break;
             case '4':
-                callRegister();
+                callRegisterMenu();
                 break;
             case '5':
                 tonesMenu();
@@ -1372,8 +1372,8 @@ Phone security
                 break;
             case '6':
                 console.log(`
-Change access codes
-1 => Exit`);
+                    Change access codes
+                    1 => Exit`);
                 collector.question("Enter: ", (inputChangeAccess) => {
                     switch (inputChangeAccess) {
                         case '1':
@@ -1474,7 +1474,7 @@ Reminders
 }
 
 
-function clockMenu() {
+function clock() {
     console.log(`
 Clock Menu
 1 => Alarm clock
@@ -1491,11 +1491,11 @@ Clock Menu
                 collector.question("Enter: ", (inputAlarmClock) => {
                     switch (inputAlarmClock) {
                         case '1':
-                            clockMenu();
+                            clock();
                             break;
                         default:
                             console.log("Invalid input.");
-                            clockMenu();
+                            clock();
                             break;
                     }
                 });
@@ -1505,11 +1505,11 @@ Clock Menu
                 collector.question("Enter: ", (inputClockSettings) => {
                     switch (inputClockSettings) {
                         case '1':
-                            clockMenu();
+                            clock();
                             break;
                         default:
                             console.log("Invalid input.");
-                            clockMenu();
+                            clock();
                             break;
                     }
                 });
@@ -1519,11 +1519,11 @@ Clock Menu
                 collector.question("Enter: ", (inputDateSettings) => {
                     switch (inputDateSettings) {
                         case '1':
-                            clockMenu();
+                            clock();
                             break;
                         default:
                             console.log("Invalid input.");
-                            clockMenu();
+                            clock();
                             break;
                     }
                 });
@@ -1533,11 +1533,11 @@ Clock Menu
                 collector.question("Enter: ", (inputStopwatch) => {
                     switch (inputStopwatch) {
                         case '1':
-                            clockMenu();
+                            clock();
                             break;
                         default:
                             console.log("Invalid input.");
-                            clockMenu();
+                            clock();
                             break;
                     }
                 });
@@ -1547,11 +1547,11 @@ Clock Menu
                 collector.question("Enter: ", (inputCountdownTimer) => {
                     switch (inputCountdownTimer) {
                         case '1':
-                            clockMenu();
+                            clock();
                             break;
                         default:
                             console.log("Invalid input.");
-                            clockMenu();
+                            clock();
                             break;
                     }
                 });
@@ -1561,11 +1561,11 @@ Clock Menu
                 collector.question("Enter: ", (inputAutoUpdate) => {
                     switch (inputAutoUpdate) {
                         case '1':
-                            clockMenu();
+                            clock();
                             break;
                         default:
                             console.log("Invalid input.");
-                            clockMenu();
+                            clock();
                             break;
                     }
                 });
@@ -1575,7 +1575,7 @@ Clock Menu
                 break;
             default:
                 console.log("Invalid input.");
-                clockMenu();
+                clock();
                 break;
         }
     });
